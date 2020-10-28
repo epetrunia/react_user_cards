@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './CardList.module.scss';
+import UserCard from './../UserCard';
 
 class CardList extends Component {
   constructor() {
@@ -19,7 +20,7 @@ class CardList extends Component {
     return (
       <div className={styles.cardList}>
         {users.map((user) => (
-          <h1 key={user.id}>{user.name}</h1>
+          <UserCard key={user.id} user={user} />
         ))}
       </div>
     );
