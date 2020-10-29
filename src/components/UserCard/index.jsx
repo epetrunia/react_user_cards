@@ -4,7 +4,7 @@ import styles from './UserCard.module.scss';
 function UserCard(props) {
   const { name, id, email, website } = props.user;
   return (
-    <div className={styles.cardContainer}>
+    <section className={styles.cardContainer}>
       <div className={styles.flexContainer}>
         <div className={styles.imageWrapper}>
           <img
@@ -12,13 +12,13 @@ function UserCard(props) {
             alt='user profile pic'
           />
         </div>
-        <h1 className={styles.userName}>{name}</h1>
-        <h2 className={styles.userEmail}>{email}</h2>
+        <h2 className={styles.userName}>{name}</h2>
+        <h3 className={styles.userEmail}>{email}</h3>
         <a className={styles.userLink} href={website}>
           {website}
         </a>
       </div>
-    </div>
+    </section>
   );
 }
 

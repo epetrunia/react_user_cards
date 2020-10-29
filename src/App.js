@@ -29,14 +29,14 @@ class App extends Component {
     );
 
     return (
-      <div className={styles.App}>
+      <article className={styles.App}>
         <h1 className={styles.header}>User Cards</h1>
         <SearchBox
           placeholder='search user'
           handleSearchChange={this.handleSearchChange}
         />
         <CardList users={filteredUsers} />
-      </div>
+      </article>
     );
   }
 }
