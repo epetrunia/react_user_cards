@@ -2,6 +2,8 @@
   width: 85vw;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 280px));
+  grid-column-gap: 30px;
+  grid-row-gap: 25px;
+  justify-content: center;
 }
