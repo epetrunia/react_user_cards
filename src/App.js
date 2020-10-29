@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import './App.css';
+import styles from './App.module.scss';
 import CardList from './components/CardList/index';
 import SearchBox from './components/SearchBox';
 
@@ -29,8 +29,8 @@ class App extends Component {
     );
 
     return (
-      <div className='App'>
-        <h1>User Cards</h1>
+      <div className={styles.App}>
+        <h1 className={styles.header}>User Cards</h1>
         <SearchBox
           placeholder='search user'
           handleSearchChange={this.handleSearchChange}
