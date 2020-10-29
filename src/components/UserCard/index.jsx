@@ -8,7 +8,7 @@ function UserCard(props) {
       <img src={`https://robohash.org/${id}?set=set5`} alt='user profile pic' />
       <h1>{name}</h1>
       <h2>{email}</h2>
-      <a href={website}>My website</a>
+      <a href={website}>{website}</a>
     </div>
   );
 }
